@@ -1,0 +1,225 @@
+﻿h1, h2, h3, nav, footer {
+ font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+body {
+   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-size: 80%;
+}
+#search-input{
+    width: calc(100% - 20px); /* Full width inside the table div */
+   margin: 0 0 20px 0; /* Margin bottom to separate from table */
+   padding: 10px; /* Padding inside the search input */
+   border: 1px solid #ccc; /* Border for the search input */
+   border-radius: 4px; /* Rounded corners for the search input */
+}
+/* TODO: add a background image here somehow */
+.background-image-blur-whitewash {
+   /*position: fixed;*/
+   /*top: 0;*/
+   /*left: 0;*/
+   /*width: 100%;*/
+   /*height: 100%;*/
+   /*background-size: cover;*/
+   /*background-position: center;*/
+   /*filter: blur(15px) contrast(0.2) brightness(1.7);*/
+   /*z-index: -1;*/
+   background-color: #000; /* or any other color you have in your header */
+   text-align: center;
+   padding: 20px 0; /* Adjust the padding to match the desired spacing */
+   color: #fff; /* This will set your text color to white */
+}
+.background-image-blur-whitewash h1 {
+  font-size: 48px; /* Adjust the size as needed */
+  margin: 0;
+  padding: 0;
+  font-weight: normal; /* Assuming you don't want bold text */
+}
+.background-image-blur-whitewash p {
+  font-size: 24px; /* Adjust the size as needed */
+  margin: 0;
+  padding: 10px 0; /* This adds some space above and below the subtitle */
+}
+.table-div{
+   background: #fff; /* Background color of the table div */
+   border-radius: 5px; /* Rounded corners for the table div */
+   padding: 20px; /* Padding inside the table div */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the table div */
+   margin: 20px auto; /* Center the table div on the page */
+   width: 80%; /* Width of the table div; adjust as needed */
+   overflow: hidden; /* Ensures the content fits within the rounded corners */
+}
+.skill-div{
+    background-color: #333; /* Dark background for contrast */
+  color: #fff; /* White text color for readability */
+  padding: 20px; /* Padding for some space inside the div */
+  margin: 20px auto; /* Center the div */
+  width: 50%; /* Set a width for the div */
+  border-radius: 10px; /* Rounded corners for the div */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle depth effect */
+  display: flex; /* Using flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: space-between;
+  gap: 10px; /* Space between items */
+}
+    .skill-div h3 {
+      margin: 0; /* Remove default margin */
+      padding: 10px; /* Padding for the heading */
+      text-transform: uppercase; /* UPPERCASE text */
+      letter-spacing: 1px; /* More space between letters for stylistic choice */
+        width: 50vw;
+    }
+
+    .skill-div ul {
+      list-style: none; /* Remove default list styling */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+    }
+
+    .skill-div li {
+      padding: 5px 0; /* Padding top and bottom for each list item */
+      font-size: 1.5vw; /* Font size is 1.5% of the viewport's width */
+    }
+
+
+
+    .skill-div li {
+      padding: 5px 0; /* Padding top and bottom for each list item */
+
+      text-transform: uppercase; /* Convert text to uppercase */
+    }
+
+.skill-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.middle-column {
+  flex: 0 1 auto; /* Do not grow or shrink */
+  margin: 0 20px; /* Spacing on the sides */
+}
+
+.skill-column.winner {
+  background-color: green;
+}
+
+.skill-column.loser {
+  background-color: red;
+}
+
+.skill-column.no-comparison {
+  background-color: darkgrey;
+}
+
+#logo-div{
+   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333; /* Background color of the logo div */
+  color: #fff; /* Text color */
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+#character-table {
+   width: 100%;
+   border-collapse: collapse;
+   padding: 10px;
+}
+#character-table th, #character-table td {
+   padding: 10px; /* Padding inside cells */
+   text-align: left; /* Align text to the left for cells */
+   border-bottom: 1px solid #eee; /* Bottom border for each cell */
+}
+#character-table th {
+   background-color: #f9f9f9; /* Light background for header */
+   font-weight: normal; /* Normal font weight for header */
+}
+
+#character-table tr:last-child td {
+   border-bottom: none; /* No border for the last row to avoid double border */
+}
+
+#character-table tr:nth-child(even) {
+   background-color: #f2f2f2; /* Zebra striping for rows */
+}
+
+#character-table tr:hover {
+   background-color: #f1f1f1; /* Hover effect for rows */
+}
+
+.second-div {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+.filters-div, .comparision-div {
+    background: #fff; /* Change to the color you want or add background images */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Simple shadow for depth */
+    background: #fff; /* For example */
+    margin: 10px 0; /* Spacing at the top and bottom */
+}
+#previous-comparisons div {
+  background: #f9f9f9; /* Light grey background for each comparison */
+  border: 1px solid #e1e1e1; /* Light grey border */
+  padding: 5px;
+  margin-bottom: 5px; /* Space between comparisons */
+  border-radius: 5px;
+}
+
+.skill-section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-container {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+}
+
+.green-container {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  width: 33%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 33%;
+}
+
+.red-container {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  width: 33%;
+}
+
+.item {
+  display: flex;
+  height: 40px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-text {
+  color: white;
+  font-size: 20px;;
+}
